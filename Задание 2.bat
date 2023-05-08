@@ -30,6 +30,7 @@ set /p rootpath=Введите полный путь к файлу:
 if not exist %rootpath% (
 echo Error
 pause
+exit /b 1
 )
 
 set /p at=Введите атрибут (h,r,a):
@@ -60,3 +61,4 @@ echo Всего папок:%cnt_dirs%
 endlocal
 
 pause
+exit /b 0
